@@ -15,7 +15,7 @@ public class Interest {
 
         for (int year = 1; year < 11 ; year++)
         {
-            BigDecimal amount = principal.multiply(rate.add(BigDecimal.ONE).pow(year));
+            BigDecimal amount = principal.multiply(rate.add(BigDecimal.ONE).pow(year));//M=C*(1+i)^n
 
             System.out.printf("%4d%20s%n", year, NumberFormat.getCurrencyInstance().format(amount));
             
